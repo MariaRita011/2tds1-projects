@@ -5,7 +5,7 @@
 class Category {
     constructor(id, name) {
         this.id = id;
-        this.nam = name;
+        this.name = name;
         this.products = [];
     }
 }
@@ -75,7 +75,7 @@ function createCategory() {
     categoriesList.addCategory(categoryName);
 
     //Exibindo no console
-    console.log(categoriesList.categories);
+    //console.log(categoriesList.categories);
 }
 
 //Função de criação de produto
@@ -90,6 +90,11 @@ function createProduct() {
     productsList.addProduct(productName, productPrice, productCategory);
 
     //Exibindo no console
-    console.log(productsList.products);
+   //console.log(productsList.products);
+}
+
+function findCategory(id) {
+    const category = categoriesList.getCategoryById(id);
+    console.log(category.name);
 }
 
