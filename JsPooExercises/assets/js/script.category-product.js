@@ -106,15 +106,26 @@ function createCategory() {
 function createProduct() {
 
     //Atribuindo valores necessários
-    const productName = 'Chocolate';
-    const productPrice = 0.50;
-    const productCategory = categoriesList.categories[0];
+    const productName1 = 'Chocolate';
+    const productPrice1 = 0.50;
+    const productCategory1 = categoriesList.categories[0];
+
+    const productName2 = 'sneakers';
+    const productPrice2 = 100;
+    const productCategory2 = categoriesList.categories[1];
+
+    const productName3 = 'Harry Potter';
+    const productPrice3 = 50;
+    const productCategory3 = categoriesList.categories[2];
 
     //Exportando para array de produtos
-    productsList.addProduct(productName, productPrice, productCategory);
+    productsList.addProduct(productName1, productPrice1, productCategory1);
+    productsList.addProduct(productName2, productPrice2, productCategory2);
+    productsList.addProduct(productName3, productPrice3, productCategory3);
+
 
     //Exibindo no console
-   //console.log(productsList.products);
+   console.log(productsList.products);
 }
 
 function findCategory(id) {
@@ -132,5 +143,11 @@ function deleteCategory(id) {
     categoriesList.deleteCategory(id);
 
     console.log(categoriesList.categories);
+}
+
+function findProduct(id) {
+const product = productsList.getProductById(id);
+
+console.log(product.name);
 }
 
