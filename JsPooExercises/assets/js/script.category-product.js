@@ -72,6 +72,10 @@ class ProductService {
         this.products.push(product);
         category.products.push(product);
     }
+
+    getProductById(id) {
+        return this.products.find((product)=>  product.id == id);
+    }
 }
 
 
@@ -129,3 +133,4 @@ function deleteCategory(id) {
 
     console.log(categoriesList.categories);
 }
+
