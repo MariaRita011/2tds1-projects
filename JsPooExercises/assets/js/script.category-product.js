@@ -47,6 +47,13 @@ class CategoryService {
         category.name = name;
     }
 
+    //D => delete
+deleteCategory(id) {
+    const category = this.getCategoryById(id);
+    const index = this.categories.indexOf(category);
+
+    this.categories.splice(index, 1);
+}
 }
 
 //Classe de armazenamento e criação de novos produtos
