@@ -1,4 +1,4 @@
-//Testando forEach names
+/* //Testando forEach names
 const names = ["Lívia", "Felipe", "Thiago", "Maria"];
 
 names.forEach((name) => {
@@ -12,7 +12,7 @@ numbers.forEach((number, index) => {
     if (number % 2 == 0) {
         console.log(`O número ${number} está na posição ${index}.`);
     }
-})
+}) */
 
 //Testando forEach com objetos
 /* const cars = [
@@ -38,7 +38,7 @@ cars.forEach((car) => {
     console.log(`Marca: ${car.marca} no modelo: ${car.modelo}`);
 }) */
 
-class Car {
+/* class Car {
     constructor(brandCar, modelCar) {
         this.brandCar = brandCar;
         this.modelCar = modelCar;
@@ -71,5 +71,5 @@ function add() {
     document.getElementById('model').value = '';
 
     console.log(list);
-}
+} */
  
