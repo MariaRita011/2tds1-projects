@@ -35,6 +35,11 @@ class CategoryService {
         const category = new Category(id, name);
         this.categories.push(category);
     }
+
+    getCategoryById(id) {
+        return this.categories.find((category) => category.id == id);
+    }
+
 }
 
 //Classe de armazenamento e criação de novos produtos
