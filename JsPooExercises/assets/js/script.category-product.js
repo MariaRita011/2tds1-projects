@@ -76,13 +76,19 @@ const productsList = new ProductService();
 function createCategory() {
 
     //Atribuindo valores necessários
-    const categoryName = "Candies";
+    const categoryName1 = 'Candies';
+    const categoryName2 = 'makes';
+    const categoryName3 = 'shoes';
+
 
     //Exportando a categoria para o array de categorias
-    categoriesList.addCategory(categoryName);
+    categoriesList.addCategory(categoryName1);
+    categoriesList.addCategory(categoryName2);
+    categoriesList.addCategory(categoryName3);
+
 
     //Exibindo no console
-    //console.log(categoriesList.categories);
+    console.log(categoriesList.categories);
 }
 
 //Função de criação de produto
@@ -103,5 +109,11 @@ function createProduct() {
 function findCategory(id) {
     const category = categoriesList.getCategoryById(id);
     console.log(category.name);
+}
+
+function editCategory(id, name) {
+    categoriesList.updateCategory(id, name);
+
+    console.log(categoriesList.categories);
 }
 
